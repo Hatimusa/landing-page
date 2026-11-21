@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitnit | Victory by Covenant Eyes for Christians — Block Pornography &amp; Reclaim Your Focus</title>
+  <meta name="description" content="A practical guide for Christians on how Victory by Covenant Eyes helps prevent pornography content across your devices, cut distractions, and save valuable time. Try 30 days free with code SAFE30." />
+  <style>
+    :root {
+      --navy: #13294B;
+      --navy-deep: #0D1D36;
+      --navy-soft: #1E3D6B;
+      --coral: #E86C4F;
+      --coral-hover: #D4593D;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --surface-tint: #F1F5F9;
+      --text: #0F172A;
+      --muted: #475569;
+      --border: #E2E8F0;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Smooth Minimal Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-soft));
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--navy);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 64px 0 44px;
+      text-align: center;
+    }
+
+    .pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #EEF3F9;
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 22px;
+    }
+
+    .hero-logo {
+      margin-bottom: 22px;
+    }
+
+    .hero-logo img {
+      height: 44px;
+      width: auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.3vw, 2.9rem);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      max-width: 820px;
+      margin: 0 auto 20px;
+    }
+
+    .hero p.lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 34px;
+    }
+
+    .hero p.lead strong {
+      color: var(--text);
+    }
+
+    /* Offer Card (Button #1) */
+    .offer-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px 26px;
+      max-width: 540px;
+      margin: 0 auto;
+      box-shadow: 0 18px 40px -15px rgba(19, 41, 75, 0.12);
+    }
+
+    .code-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FEF2EF;
+      color: var(--coral-hover);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
+
+    .code-strip code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: #FFFFFF;
+      color: var(--navy);
+      padding: 2px 8px;
+      border-radius: 5px;
+      border: 1px solid rgba(232, 108, 79, 0.3);
+      font-size: 0.95rem;
+    }
+
+    .offer-card h2 {
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background-color: var(--coral);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 16px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 20px -6px rgba(232, 108, 79, 0.55);
+      transition: transform 0.18s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--coral-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px -6px rgba(232, 108, 79, 0.65);
+    }
+
+    .offer-subtext {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    /* Core Benefits Grid */
+    .section {
+      padding: 52px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 38px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px -12px rgba(19, 41, 75, 0.09);
+    }
+
+    .icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: #EEF3F9;
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .icon-box.accent {
+      background: #FEF2EF;
+      color: var(--coral);
+    }
+
+    .feature-card h3 {
+      font-size: 1.15rem;
+      color: var(--navy);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    /* Subtle Mid-Page Affiliate Disclosure */
+    .mid-disclosure {
+      max-width: 760px;
+      margin: 12px auto 0;
+      padding: 12px 18px;
+      background: var(--surface-tint);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* Device Protection & Christian Focus Panel */
+    .highlight-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 32px;
+      align-items: center;
+    }
+
+    .highlight-panel h3 {
+      font-size: 1.45rem;
+      color: var(--navy);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .highlight-panel p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 16px;
+    }
+
+    .benefit-list {
+      list-style: none;
+    }
+
+    .benefit-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .benefit-list svg {
+      flex-shrink: 0;
+      color: var(--coral);
+      margin-top: 4px;
+    }
+
+    /* Smooth FAQ Accordion */
+    .faq-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    details.faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      transition: border-color 0.2s ease;
+    }
+
+    details.faq-item[open] {
+      border-color: var(--navy-soft);
+    }
+
+    details.faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+      color: var(--muted);
+    }
+
+    details.faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--coral);
+    }
+
+    details.faq-item p {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Closing CTA Box (Button #2) */
+    .closing-box {
+      background: linear-gradient(135deg, var(--navy), var(--navy-deep));
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 46px 28px;
+      text-align: center;
+    }
+
+    .closing-box h2 {
+      font-size: clamp(1.5rem, 3vw, 2.05rem);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .closing-box p {
+      color: #CBD5E1;
+      max-width: 640px;
+      margin: 0 auto 28px;
+      font-size: 1.02rem;
+    }
+
+    .closing-box .cta-btn {
+      max-width: 390px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 28px 20px;
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+      }
+      .hero {
+        padding: 44px 0 32px;
+      }
+      .highlight-panel {
+        padding: 26px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Fitnit Brand Linked to fitnit.site -->
+  <header>
+    <div class="nav-wrap">
+      <a href="https://fitnit.site" class="brand-link">
+        <span class="brand-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </span>
+        <span>Fitnit</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#for-christians">For Christians</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="pill-tag">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>For Christians Ready to Reclaim Their Focus &amp; Time</span>
+      </div>
+
+      <div class="hero-logo">
+        <img src="https://i.postimg.cc/pThghXm7/Horizontal-Victory-Logo-Full-Color-Positive-768x205.png" alt="Victory by Covenant Eyes Logo" />
+      </div>
+
+      <h1>You Don’t Have to Wait for January to Take Your Next Step Toward Freedom</h1>
+
+      <p class="lead">
+        Lasting change grows through daily choices, faith, and trusted community—not a single New Year’s resolution. Discover how <strong>Victory by Covenant Eyes</strong> helps prevent pornography content across your devices, eliminates digital distractions, and saves you hours every week so you can stay focused on what matters most to Christians.
+      </p>
+
+      <!-- Button #1 -->
+      <div class="offer-card">
+        <div class="code-strip">
+          <span>30-Day Free Trial Code:</span>
+          <code>SAFE30</code>
+        </div>
+        <h2>Protect Your Devices &amp; Build Daily Accountability</h2>
+        <a href="https://covenanteyes.sjv.io/OYAV5r" target="_blank" rel="noopener noreferrer sponsored" class="cta-btn">
+          Take Your Next Step With Victory &rarr;
+        </a>
+        <p class="offer-subtext">
+          Redeem promo code <strong>SAFE30</strong> during website signup for 30 days free.
+        </p>
+      </div>
+    </section>
+
+    <!-- Core Role: Prevent Pornography, Save Time & Stop Distraction -->
+    <section id="how-it-works" class="section">
+      <div class="section-head">
+        <h2>Why Christians Use Victory by Covenant Eyes</h2>
+        <p>
+          Unfiltered screens quietly drain your time, spiritual focus, and peace of mind. Victory puts practical device guardrails in place so temptation loses its easy access.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="feature-card">
+          <div class="icon-box accent">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+            </svg>
+          </div>
+          <h3>Prevent Pornography Content</h3>
+          <p>
+            <strong>Victory Shield</strong> adds strong device-level guardrails and screen accountability across your phone, tablet, and computer to block explicit content before a momentary impulse turns into regret.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Save Time &amp; End Late-Night Spirals</h3>
+          <p>
+            Scrolling through triggering feeds can steal hours of sleep, prayer, and productive work. Clear digital boundaries help you close your screen with a clear conscience and get your time back.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Walk With Trusted Christian Allies</h3>
+          <p>
+            Freedom grows in the light. Invite a trusted friend, mentor, or spouse to walk alongside you through simple check-ins and honest encouragement—without shame or isolation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Smaller Mid-Page Affiliate Disclosure -->
+      <div class="mid-disclosure">
+        <strong>Partner Disclosure:</strong> Fitnit (fitnit.site) is an independent promotional resource and not the official Covenant Eyes website. If you sign up through our partner link using code <strong>SAFE30</strong>, we may earn a referral commission at no extra cost to you.
+      </div>
+    </section>
+
+    <!-- Deeper Christian & Device Focus Section -->
+    <section id="for-christians" class="section">
+      <div class="highlight-panel">
+        <div>
+          <h3>Built to Help Christians Live Undistracted</h3>
+          <p>
+            No app replaces personal surrender and daily faithfulness—but having smart guardrails on your devices removes unnecessary stumbling blocks so you can focus on your family, church, and calling.
+          </p>
+          <p style="margin-bottom: 0;">
+            Starting today—before the rush of January—gives you space to configure your devices, set healthy habits, and step into the new year with clarity.
+          </p>
+        </div>
+
+        <ul class="benefit-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span><strong>Cross-Device Coverage:</strong> Works on iOS, Android, Windows, and Mac so every screen you carry stays protected.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span><strong>Less Mental Clutter:</strong> Reduces constant digital triggers and rabbit holes that fragment your attention during the day.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span><strong>Daily Habit &amp; Reflection Tools:</strong> Guided mini-courses and check-ins rooted in grace, personal growth, and accountability.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+      <div class="section-head">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers for Christians considering Victory by Covenant Eyes.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <details class="faq-item" open>
+          <summary>
+            <span>How does Victory by Covenant Eyes prevent pornography on my devices?</span>
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <p>
+            Victory combines two tools: <strong>Victory Shield</strong>, which helps block explicit websites and monitor screen activity across your devices, and the <strong>Victory app</strong>, which tracks daily progress and connects you with a trusted accountability partner.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>How does it help save time and reduce daily distractions?</span>
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <p>
+            Explicit content and tempting browsing loops often consume hours of evening rest, study, and prayer time. By blocking triggering access points and encouraging daily check-ins, Victory helps you close distracting tabs and stay present with your goals.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Is Victory by Covenant Eyes designed for Christians?</span>
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <p>
+            Yes. Covenant Eyes has served Christians for over two decades with a grace-centered approach that emphasizes healthy community, prayerful perseverance, and practical accountability rather than shame.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>How do I claim the 30-day free trial with code SAFE30?</span>
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <p>
+            Click either button on this page to visit the official Covenant Eyes website, choose your plan, and enter promo code <strong>SAFE30</strong> during website signup to receive your first 30 days free.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Closing CTA Banner (Button #2) -->
+    <section class="section">
+      <div class="closing-box">
+        <h2>Start Today—Protect Your Focus Before the New Year</h2>
+        <p>
+          Take one practical step to guard your devices, reclaim wasted hours, and walk in freedom with Victory by Covenant Eyes. Use code <strong>SAFE30</strong> at website signup for 30 days free.
+        </p>
+        <a href="https://covenanteyes.sjv.io/OYAV5r" target="_blank" rel="noopener noreferrer sponsored" class="cta-btn">
+          Take Your Next Step With Victory &rarr;
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Footer -->
+  <footer>
+    <p>
+      &copy; 2026 <a href="https://fitnit.site">Fitnit</a> &middot; Independent Partner Resource for Victory by Covenant Eyes. All trademarks belong to their respective owners.
+    </p>
+  </footer>
+
+</body>
+</html>
